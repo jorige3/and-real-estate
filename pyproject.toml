@@ -29,6 +29,5 @@ dev = [
 ]
 
 # ✅ Vercel configuration (IMPORTANT FIX)
-[tool.vercel]
-root = "backend"
-entrypoint = "main:app"
+[tool.vercel.build]
+entrypoint = "backend.main:app"
