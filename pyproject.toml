@@ -1,9 +1,10 @@
 [project]
 name = "and-real-estate"
 version = "0.1.0"
-description = "Add your description here"
+description = "And Real Estate Backend API"
 readme = "README.md"
 requires-python = ">=3.11"
+
 dependencies = [
     "aiosqlite>=0.22.1",
     "alembic>=1.18.4",
@@ -26,3 +27,8 @@ dependencies = [
 dev = [
     "pillow>=12.2.0",
 ]
+
+# ✅ Vercel configuration (IMPORTANT FIX)
+[tool.vercel]
+root = "backend"
+entrypoint = "main:app"
