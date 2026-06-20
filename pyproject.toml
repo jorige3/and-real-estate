@@ -15,7 +15,6 @@ dependencies = [
     "httpx>=0.28.1",
     "passlib[bcrypt]>=1.7.4",
     "pillow>=12.2.0",
-    "psycopg2-binary>=2.9.10",
     "pydantic-settings>=2.14.1",
     "python-jose[cryptography]>=3.5.0",
     "python-multipart>=0.0.32",
@@ -23,11 +22,5 @@ dependencies = [
     "uvicorn>=0.49.0",
 ]
 
-[dependency-groups]
-dev = [
-    "pillow>=12.2.0",
-]
-
-# ✅ Vercel configuration (IMPORTANT FIX)
-[tool.vercel.build]
+[tool.vercel]
 entrypoint = "backend.main:app"
